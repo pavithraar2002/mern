@@ -1,5 +1,6 @@
 import React from 'react'  //install
 import{Link} from 'react-router-dom' //install
+import logo from './assets/images/logo.svg'
 
 
 const Header = () => {
@@ -8,8 +9,9 @@ const Header = () => {
     sessionStorage.removeItem('userToken')
   }
   return (
-    <div>
+    <div className='container'>
         <header className="navbar">
+        <img  src={logo} alt="Entri News Logo" className="logo" />
 
     <nav className="links">
       <ul className="d-flex list-unstyled gap-4">

@@ -1,7 +1,7 @@
 import React from 'react'
 import heroImg from './assets/images/image-web-3-desktop.jpg'
-
 import { Link } from 'react-router-dom'
+
 
 const Hero = () => {
     return (
@@ -11,7 +11,7 @@ const Hero = () => {
                 <div className="container">
                     <div className="row ">
                         <section className="col-md-8 ">
-                        <img
+                        <img className="img-fluid"
                 src={heroImg}
                 alt="Entri news hero image"
                 />

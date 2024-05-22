@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
 
 :root{
+  
     --Grayish-blue:hsl(233,8%,79%);
     --Dark-grayish-blue: hsl(236, 13%, 42%);
     --Soft-red: hsl(5, 85%, 63%);
@@ -8,7 +9,11 @@
      --lbg: #fafafa;
   --bg: #ffffff;
 }
+*, ::after, ::before {
+  box-sizing: border-box;
+}
 body{
+    
     font-family: "Inter";
 }
 .container{
