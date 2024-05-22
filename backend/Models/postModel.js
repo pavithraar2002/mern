@@ -20,3 +20,7 @@ const postSchema = new mongoose.Schema({
   const Post = mongoose.model('posts', postSchema,"posts");//(collection name,collectionschema)
 
   export default Post;
+
+
+
+  
