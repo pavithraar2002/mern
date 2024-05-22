@@ -11,7 +11,8 @@ import {
   createBrowserRouter,RouterProvider
 } from 'react-router-dom'
 import Newblog from './Newblog.jsx'
-
+import Blogs from './Blogs.jsx'
+import LoginForm from './Login.jsx'
 const router = createBrowserRouter([
   {
     path: "/",
@@ -31,8 +32,16 @@ const router = createBrowserRouter([
         element: <SignupForm/>,
       },
       {
+        path: "/login",
+        element: <LoginForm/>,
+      },
+      {
         path: "/new",
         element: <Newblog/>,
+      },
+      {
+        path:'/blogs',
+        element:<Blogs />
       }
 
 

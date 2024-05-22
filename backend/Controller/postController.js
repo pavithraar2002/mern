@@ -11,7 +11,9 @@ const addPost =async (req,res)=>{
             desc:req.body.desc
         }
         var post = new Post(postItem)
-        await post.save();   
+        await post.save(); 
+        post.imageurl = `http://localhost:3000/uploads/${post.id}`
+        
         res.status(200).json(postItem)       
 
     } catch (error) {

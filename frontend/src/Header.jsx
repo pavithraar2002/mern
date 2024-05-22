@@ -1,5 +1,5 @@
-import React from 'react'
-import{Link} from 'react-router-dom'
+import React from 'react'  //install
+import{Link} from 'react-router-dom' //install
 import './Header.css'
 const Header = () => {
   return (
@@ -17,10 +17,25 @@ const Header = () => {
             Newblog
           </Link>
         </li>
+        <li>
+          <Link to="/blogs" className="link text-decoration-none fs-5.5">
+            Blogs
+          </Link>
+        </li>
         
         <li>
           <Link to="/signup" className="link text-decoration-none fs-5.5">
             SignUp page
+          </Link>
+        </li>
+        <li>
+          <Link to="/login" className="link text-decoration-none fs-5.5">
+            LOGIN
+          </Link>
+           </li>
+           <li>
+          <Link to="/" className="link text-decoration-none fs-5.5">
+            LOGOUT
           </Link>
         </li>
       </ul>

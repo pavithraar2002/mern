@@ -1,5 +1,5 @@
 import React,{ useState } from 'react'
-import axios from 'axios'
+import axios from 'axios' //install
 import './Signup.css'
 const SignupForm = () => {
 
@@ -20,7 +20,7 @@ const handleSubmit = async (e) =>{
     e.preventDefault();
     //call to backend api
    try {
-    const response = await axios.post("http://localhost:3000/signup",formData);
+    const response = await axios.post("http://localhost:3000/users",formData);
     console.log(response.data);
    } catch (error) {
     console.error(error);
