@@ -14,6 +14,7 @@ app.use('/users',userRouter)
 app.use('/employees',employeeRouter)
 app.use('/posts',postRouter)
 
+
 const dirname = path.resolve()
 app.use(express.static(path.join(dirname,'uploads')))
 

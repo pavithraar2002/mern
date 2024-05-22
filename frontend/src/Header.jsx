@@ -1,10 +1,16 @@
 import React from 'react'  //install
 import{Link} from 'react-router-dom' //install
-import './Header.css'
+
+
 const Header = () => {
+
+  const tokenRelease=()=>{
+    sessionStorage.removeItem('userToken')
+  }
   return (
     <div>
         <header className="navbar">
+
     <nav className="links">
       <ul className="d-flex list-unstyled gap-4">
         <li>
@@ -22,6 +28,11 @@ const Header = () => {
             Blogs
           </Link>
         </li>
+        <li>
+          <Link to="/trending" className="link text-decoration-none fs-5.5">
+            Trending
+          </Link>
+        </li>
         
         <li>
           <Link to="/signup" className="link text-decoration-none fs-5.5">
@@ -34,7 +45,7 @@ const Header = () => {
           </Link>
            </li>
            <li>
-          <Link to="/" className="link text-decoration-none fs-5.5">
+          <Link to="/" onClick={tokenRelease} className="link text-decoration-none fs-5.5">
             LOGOUT
           </Link>
         </li>
