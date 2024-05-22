@@ -1,9 +1,10 @@
 import Post from "../Models/postModel.js";
-
+import {filename} from '../upload.js'
 
 const addPost =async (req,res)=>{
     try {
         var postItem={
+            image:filename,
             title:req.body.title,
             subtitle:req.body.subtitle,
             desc:req.body.desc
